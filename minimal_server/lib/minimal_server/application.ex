@@ -17,4 +17,14 @@ defmodule MinimalServer.Application do
     opts = [strategy: :one_for_one, name: MinimalServer.Supervisor]
     Supervisor.start_link(children, opts)
   end
+
+  def children do 
+    []
+  end
+
+  def opts do 
+    [
+      strategy: :one_for_one,
+      name: MinimalServer.Supervisor
+    ]
 end
