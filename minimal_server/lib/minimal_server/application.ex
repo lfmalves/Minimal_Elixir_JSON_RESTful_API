@@ -29,4 +29,5 @@ defmodule MinimalServer.Application do
       strategy: :one_for_one,
       name: MinimalServer.Supervisor
     ]
+  end 
 end
