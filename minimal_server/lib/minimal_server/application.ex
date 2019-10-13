@@ -18,8 +18,10 @@ defmodule MinimalServer.Application do
     Supervisor.start_link(children, opts)
   end
 
-  def children do 
-    []
+  defp children do 
+    [
+      MinimalServer.Endpoint
+    ]
   end
 
   def opts do 
